@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 80%;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: x-large;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header {
+  padding: 20px 0px;
+  background-color: lightseagreen;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+header ul li a {
+  font-size: x-large;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+header ul li a:hover {
+  color: darkblue;
+  font-weight: 500;
+}
+
+.navbar-items-icon {
+  color: #00296b;
+  display: none;
+}
+
+header.active {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  box-shadow: 0 2px 28px 0 lightblue;
+  width: 100%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .nav-links-sidebar {
+    position: absolute;
+    display: block;
+    background-color: lightgray;
+    align-items: center;
+    left: 0px;
+    top: 75px;
+    transition: 0.5s;
+    width: 100%;
+    height: 40vh;
+    z-index: 5;
+  }
+  .nav-links-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  header ul li {
+    margin-bottom: 30px;
+  }
+  .navbar-items-icon {
+    display: block;
+    position: absolute;
+    right: 30px;
+    color: #00296b;
+    border: 1px solid white;
+    padding: 5px 10px;
   }
 }
