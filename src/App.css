@@ -68,7 +68,7 @@ header.active {
   position: sticky;
   top: 0;
   left: 0;
-  background-color: gray;
+  background-color: lightseagreen;
   box-shadow: 0 2px 28px 0 lightblue;
   width: 100%;
   z-index: 10;
@@ -81,7 +81,7 @@ header.active {
   .nav-links-sidebar {
     position: absolute;
     display: block;
-    background-color: lightgray;
+    background-color: lightseagreen;
     align-items: center;
     left: 0px;
     top: 75px;
@@ -106,4 +106,129 @@ header.active {
     border: 1px solid white;
     padding: 5px 10px;
   }
+}
+
+.left,
+.right {
+  width: 50%;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.topMargin {
+  margin-top: 80px;
+}
+
+.home {
+  height: 90vh;
+}
+
+.home .img {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.home img {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 90vh;
+  width: 100%;
+  object-fit: contain;
+  transform: scale(1.1);
+}
+.home h1 {
+  font-size: 60px;
+}
+
+.socialIcon i {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.linkedin {
+  color: lightseagreen;
+  border: 1px none lightseagreen;
+}
+
+.linkedin:hover {
+  color: darkblue;
+}
+.github {
+  color: lightseagreen;
+  border: 1px none lightseagreen;
+}
+
+.github:hover {
+  color: darkblue;
+}
+
+.twitter {
+  color: lightseagreen;
+  border: 1px none lightseagreen;
+}
+
+.twitter:hover {
+  color: darkblue;
+}
+
+.facebook {
+  color: lightseagreen;
+  border: 1px none lightseagreen;
+}
+
+.facebook:hover {
+  color: darkblue;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 13px 30px;
+  background-color: lightseagreen;
+}
+
+.primary-btn:hover {
+  background-color: whitesmoke;
+  color: lightseagreen;
+  border: 1px solid lightseagreen;
+}
+
+.home,
+.right {
+  margin-top: 15%;
+}
+
+.home,
+.socialIcon {
+  margin: 30px 0;
+}
+
+.home p {
+  margin-bottom: 30px;
+}
+
+p {
+  color: rgb(8, 41, 40);
+  line-height: 30px;
+  font-size: 20px;
 }

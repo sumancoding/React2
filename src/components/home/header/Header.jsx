@@ -14,7 +14,14 @@ const Header = () => {
     <>
       <header className="header">
         <div className="container flex">
-          <div className="logo">{"</sumancoding>"}</div>
+          <div className="logo">
+            <ul>
+              <li>
+                {" "}
+                <Link to="/"> {"</sumancoding>"}</Link>
+              </li>
+            </ul>
+          </div>
           <div className="nav">
             <ul
               className={sidebar ? "nav-links-sidebar" : "nav-links"}
