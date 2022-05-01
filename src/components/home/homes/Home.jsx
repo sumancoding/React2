@@ -17,9 +17,10 @@ const Home = () => {
           </div>
           <div className="right topMargin">
             <h1>
-              I AM A <br />
-              WEB DESIGNER
+              FULL STACK DEVELOPMENT <br />
+              STUDENT
             </h1>
+
             <div className="socialIcon">
               <i className="linkedin">
                 <a href="https://www.linkedin.com/in/sumanmalla4994/">
@@ -54,7 +55,6 @@ const Home = () => {
               kind of opportunities.I want to get started working by learning
               and sharing knowledge and experience.
             </p>
-            <button className="primary-btn">DownLoad Resume</button>
           </div>
         </div>
       </section>

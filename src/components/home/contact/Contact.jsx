@@ -3,7 +3,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import EmailIcon from "@mui/icons-material/Email";
 import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import "./Contact.css";
+
 import {
   Card,
   CardContent,
@@ -24,7 +24,7 @@ const Contact = () => {
     emailjs
       .sendForm(
         "service_qizqfar",
-        "service_qizqfar",
+        "template_uoa0mtj",
         formRef.current,
         "SoPcOhPC-mb3M5FWV"
       )
@@ -81,7 +81,7 @@ const Contact = () => {
                 label="Enter Your Name ..."
                 variant="outlined"
                 sx={{ width: "60%", mb: 5 }}
-                name="user_name"
+                name="name"
               />{" "}
               <br />
               <TextField
@@ -95,7 +95,7 @@ const Contact = () => {
                 label="Enter Your Email ..."
                 variant="outlined"
                 sx={{ width: "60%", mb: 5 }}
-                name="user_email"
+                name="email"
               />{" "}
               <br />
               <TextField
