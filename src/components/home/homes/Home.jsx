@@ -36,10 +36,12 @@ const Home = () => {
             </div>
 
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              voluptatum ducimus excepturi voluptas, numquam officiis delectus
-              corrupti nostrum voluptate possimus ex eos illo eaque
-              necessitatibus saepe! Officiis veniam deleniti ullam?
+              👋 Hi there, I'm Suman Malla (@sumancoding) and I'm learning
+              Fullstack development. I mostly enjoy working at frontend side. I
+              also enjoy wireframes, prototyping along with UI/UX design. Now
+              adays i'm also focusing on the backend side. I'm looking for any
+              kind of opportunities.I want to get started working by learning
+              and sharing knowledge and experience.
             </p>
             <button className="primary-btn">DownLoad Resume</button>
           </div>

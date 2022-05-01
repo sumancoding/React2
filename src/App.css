@@ -123,7 +123,7 @@ header.active {
 }
 
 .home {
-  height: 90vh;
+  height: 80vh;
 }
 
 .home .img {
@@ -213,13 +213,11 @@ button {
   border: 1px solid lightseagreen;
 }
 
-.home,
-.right {
+.home .right {
   margin-top: 15%;
 }
 
-.home,
-.socialIcon {
+.home .socialIcon {
   margin: 30px 0;
 }
 
@@ -231,4 +229,128 @@ p {
   color: rgb(8, 41, 40);
   line-height: 30px;
   font-size: 20px;
+}
+
+.about {
+  background-color: lightseagreen;
+}
+
+.mtop {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  margin: 20px 0;
+}
+
+.heading h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.about p {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about .left {
+  padding-right: 30px;
+}
+.about .primary-btn {
+  color: black;
+  border: 1px solid black;
+}
+
+.about .img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about .img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  right: 0;
+  background-color: lightseagreen;
+  width: 600px;
+  height: 86vh;
+  z-index: -1;
+}
+
+.skill {
+  padding: 40px 0;
+  background-color: lightseagreen;
+  color: white;
+}
+
+.skill .heading {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.progress {
+  background-color: black;
+  border-radius: 20px;
+  position: relative;
+  margin: 45px 0;
+  height: 10px;
+  width: 90%;
+}
+
+.progress h4 {
+  position: absolute;
+  color: black;
+  top: -30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.progress h4:nth-child(2) {
+  right: 0;
+  font-size: 17px;
+  font-weight: 400;
+  color: black;
+  font-weight: bold;
+}
+
+.progress-done {
+  background-color: white;
+  border-radius: 20px;
+  color: pink;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+.skill .right {
+  padding-left: 50px;
+  margin-top: 10px;
+}
+.skill .right h1 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.skill .right p {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.skill .primary-btn {
+  background-color: white;
+  color: lightseagreen;
+}
+.skill .primary-btn:hover {
+  background-color: white;
+  color: navy;
+  border: 1px solid navy;
 }
