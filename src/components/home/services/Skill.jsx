@@ -37,21 +37,20 @@ const Skill = () => {
           <div className="content flex">
             <div className="left topMarign">
               <Progress done="80" title="HTML" />
-              <Progress done="80" title="CSS" />
-              <Progress done="70" title="JAVASCRIPT" />
-              <Progress done="70" title="REACT JS" />
-              <Progress done="65" title="NODE EXPRESS" />
-              <Progress done="65" title="MONGO DB" />
+              <Progress done="75" title="CSS" />
+              <Progress done="65" title="JAVASCRIPT" />
+              <Progress done="65" title="REACT JS" />
+              <Progress done="60" title="NODE EXPRESS" />
+              <Progress done="60" title="MONGO DB" />
             </div>
             <div className="right mtop">
-              {data.map((val) => {
+              {data.map((val, i) => {
                 return (
-                  <>
+                  <div key={i}>
                     <h1>{val.title}</h1>
                     <p>{val.para}</p>
                     <p>{val.para1}</p>
-                    <button className="primary-btn">Hire Me</button>
-                  </>
+                  </div>
                 );
               })}
             </div>

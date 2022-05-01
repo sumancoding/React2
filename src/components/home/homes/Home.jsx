@@ -22,16 +22,27 @@ const Home = () => {
             </h1>
             <div className="socialIcon">
               <i className="linkedin">
-                <LinkedInIcon />
+                <a href="https://www.linkedin.com/in/sumanmalla4994/">
+                  <LinkedInIcon />{" "}
+                </a>
               </i>
               <i className="github">
-                <GitHubIcon />
+                <a href="https://github.com/sumancoding">
+                  {" "}
+                  <GitHubIcon />
+                </a>
               </i>
               <i className="twitter">
-                <TwitterIcon />
+                <a href="https://twitter.com/SumanMa03485802">
+                  {" "}
+                  <TwitterIcon />
+                </a>
               </i>
               <i className="facebook">
-                <FacebookIcon />
+                <a href="https://www.facebook.com/tsuman49">
+                  {" "}
+                  <FacebookIcon />
+                </a>
               </i>
             </div>
 

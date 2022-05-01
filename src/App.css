@@ -20,10 +20,6 @@ body {
   justify-content: space-between;
 }
 
-.logo {
-  font-size: x-large;
-}
-
 ul {
   list-style: none;
 }
@@ -123,18 +119,18 @@ header.active {
 }
 
 .home {
-  height: 80vh;
+  height: 100vh;
 }
 
 .home .img {
-  height: 90vh;
+  height: 95vh;
   width: 100%;
   position: relative;
 }
 
 .home img {
   position: absolute;
-  top: 10px;
+  top: 30px;
   left: -20px;
   height: 90vh;
   width: 100%;
@@ -156,38 +152,38 @@ header.active {
   cursor: pointer;
 }
 
-.linkedin {
+.linkedin a {
   color: lightseagreen;
   border: 1px none lightseagreen;
 }
 
-.linkedin:hover {
+.linkedin a:hover {
   color: darkblue;
 }
-.github {
+.github a {
   color: lightseagreen;
   border: 1px none lightseagreen;
 }
 
-.github:hover {
-  color: darkblue;
-}
-
-.twitter {
-  color: lightseagreen;
-  border: 1px none lightseagreen;
-}
-
-.twitter:hover {
+.github a:hover {
   color: darkblue;
 }
 
-.facebook {
+.twitter a {
   color: lightseagreen;
   border: 1px none lightseagreen;
 }
 
-.facebook:hover {
+.twitter a:hover {
+  color: darkblue;
+}
+
+.facebook a {
+  color: lightseagreen;
+  border: 1px none lightseagreen;
+}
+
+.facebook a:hover {
   color: darkblue;
 }
 
@@ -287,9 +283,12 @@ h3 {
 }
 
 .skill {
+  margin-top: 55px;
+  justify-items: center;
   padding: 40px 0;
   background-color: lightseagreen;
   color: white;
+  height: 80vh;
 }
 
 .skill .heading {
@@ -353,4 +352,51 @@ h3 {
   background-color: white;
   color: navy;
   border: 1px solid navy;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.Services {
+  text-align: center;
+  background-color: white;
+  color: lightseagreen;
+  padding: 50px 0;
+  margin-top: 0px;
+}
+.Services .box {
+  text-align: left;
+}
+
+.Services img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.Services .text {
+  background: #fff;
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 6%);
+  padding: 30px;
+  margin: 20px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+}
+
+.Services .heading h1 {
+  color: lightseagreen;
+  text-decoration: underline;
+}
+
+.Services .text h2 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.Services .text p {
+  color: lightseagreen;
 }
