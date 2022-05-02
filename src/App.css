@@ -109,36 +109,31 @@ header.active {
   width: 50%;
   position: relative;
 }
-
 .flex {
   display: flex;
 }
-
-.topMargin {
+.topMarign {
   margin-top: 80px;
 }
-
 .home {
   height: 90vh;
 }
-
 .home .img {
   height: 90vh;
   width: 100%;
   position: relative;
 }
-
 .home img {
   position: absolute;
-  top: 30px;
-  left: -20px;
+  top: 10%;
+  left: 0;
   height: 90vh;
   width: 100%;
   object-fit: contain;
   transform: scale(1.1);
 }
 .home h1 {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .socialIcon i {
@@ -188,7 +183,7 @@ header.active {
 }
 
 .home .right {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .home .socialIcon {
@@ -196,7 +191,7 @@ header.active {
 }
 
 .home p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -205,8 +200,10 @@ p {
   font-size: 20px;
 }
 
-.about {
-  background-color: lightseagreen;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 
 .mtop {
@@ -228,12 +225,11 @@ h3 {
 }
 
 .skill {
-  margin-top: 55px;
+  margin-top: 30px;
   justify-items: center;
-  padding: 40px 0;
+  padding: 50px 0;
   background-color: lightseagreen;
   color: white;
-  height: 100vh;
 }
 
 .skill .heading {
@@ -277,8 +273,7 @@ h3 {
 }
 
 .skill .right {
-  padding-left: 50px;
-  margin-top: 10px;
+  padding: 0 50px;
 }
 .skill .right h1 {
   margin-bottom: 20px;
@@ -287,16 +282,6 @@ h3 {
 .skill .right p {
   color: white;
   margin-bottom: 20px;
-}
-
-.skill .primary-btn {
-  background-color: white;
-  color: lightseagreen;
-}
-.skill .primary-btn:hover {
-  background-color: white;
-  color: navy;
-  border: 1px solid navy;
 }
 
 .grid {
@@ -310,7 +295,6 @@ h3 {
   background-color: white;
   color: lightseagreen;
   padding: 50px 0;
-  margin-top: 0px;
 }
 .Services .box {
   text-align: left;
@@ -354,7 +338,7 @@ h3 {
 
 .c-bg {
   width: 30px;
-  height: 750px;
+  height: 780px;
   background-color: lightseagreen;
   position: absolute;
 }
@@ -404,11 +388,11 @@ h3 {
   }
 
   .home .container {
-    flex-direction: column;
     flex-direction: column-reverse;
+    flex-direction: column;
   }
   .home {
-    height: 134vh;
+    height: auto;
   }
   .home .img {
     width: 100%;
@@ -427,10 +411,12 @@ h3 {
 
   .skill .content {
     flex-direction: column;
+    height: auto;
   }
 
   .skill .right {
     padding: 0 0;
+    height: 100vh;
   }
 
   .c-wrapper {

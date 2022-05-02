@@ -1,9 +1,8 @@
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import HomeIcon from "@mui/icons-material/Home";
 import EmailIcon from "@mui/icons-material/Email";
-import { useRef, useState } from "react";
-import emailjs from "emailjs-com";
-
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   Card,
   CardContent,
@@ -12,20 +11,20 @@ import {
   Button,
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-//import { ThemeContext } from "../../context";
 
 const Contact = () => {
-  const formRef = useRef();
+  const form = useRef();
   const [done, setDone] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs
       .sendForm(
-        "service_qizqfar",
-        "template_uoa0mtj",
-        formRef.current,
+        "service_ddciaiq",
+        "template_8nlujym",
+        form.current,
         "SoPcOhPC-mb3M5FWV"
       )
       .then(
@@ -33,7 +32,6 @@ const Contact = () => {
           console.log(result.text);
           setDone(true);
         },
-
         (error) => {
           console.log(error.text);
         }
@@ -64,59 +62,62 @@ const Contact = () => {
         </div>
         <div className="c-right">
           {/* <p className="c-desc">Let's get in Touch</p> */}
-
-          <Card
-            sx={{
-              width: "500px",
-              height: "650px",
-              mt: 1,
-            }}
-          >
-            <CardContent sx={{ p: "5px", m: "5px" }}>
-              <Typography variant="h3" sx={{ color: "lightseagreen" }}>
-                Let's get in Touch
-              </Typography>{" "}
-              <br /> <br />
-              <TextField
-                label="Enter Your Name ..."
-                variant="outlined"
-                sx={{ width: "60%", mb: 5 }}
-                name="name"
-              />{" "}
-              <br />
-              <TextField
-                label="Enter Subject ..."
-                variant="outlined"
-                sx={{ width: "60%", mb: 5 }}
-                name="subject"
-              />{" "}
-              <br />
-              <TextField
-                label="Enter Your Email ..."
-                variant="outlined"
-                sx={{ width: "60%", mb: 5 }}
-                name="email"
-              />{" "}
-              <br />
-              <TextField
-                id="outlined-multiline-static"
-                label="Enter Your Message"
-                multiline
-                rows={4}
-                sx={{ width: "60%", mb: 5 }}
-                name="message"
-              />{" "}
-              <br />
-              <Button
-                variant="contained"
-                onClick={handleSubmit}
-                sx={{ bgcolor: "lightseagreen", width: "30%" }}
-              >
-                Send
-              </Button>
-              {done && "Thank you"}
-            </CardContent>
-          </Card>
+          <form ref={form}>
+            <Card
+              sx={{
+                width: "500px",
+                height: "650px",
+                mt: 1,
+              }}
+            >
+              <CardContent sx={{ p: "5px", m: "5px" }}>
+                <Typography variant="h3" sx={{ color: "lightseagreen" }}>
+                  contact me
+                </Typography>{" "}
+                <br /> <br />
+                <TextField
+                  label="Enter Your Name ..."
+                  variant="outlined"
+                  sx={{ width: "60%", mb: 5 }}
+                  name="name"
+                />{" "}
+                <br />
+                <TextField
+                  label="Enter Subject ..."
+                  variant="outlined"
+                  sx={{ width: "60%", mb: 5 }}
+                  name="subject"
+                />{" "}
+                <br />
+                <TextField
+                  label="Enter Your Email ..."
+                  variant="outlined"
+                  sx={{ width: "60%", mb: 5 }}
+                  name="email"
+                />{" "}
+                <br />
+                <TextField
+                  id="outlined-multiline-static"
+                  label="Enter Your Message"
+                  multiline
+                  rows={4}
+                  sx={{ width: "60%", mb: 5 }}
+                  name="message"
+                />{" "}
+                <br />
+                <Button
+                  variant="contained"
+                  onClick={sendEmail}
+                  sx={{ bgcolor: "lightseagreen", width: "30%" }}
+                >
+                  Send
+                </Button>{" "}
+                <br />
+                <br />
+                {done && "Mesage Sent"}
+              </CardContent>
+            </Card>
+          </form>
           {/* <form ref={formRef} onSubmit={handleSubmit}>
             <input type="text" placeholder="Name..." name="user_name" />
             <input type="text" placeholder="Subject" name="user_subject" />

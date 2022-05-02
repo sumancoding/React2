@@ -23,7 +23,7 @@ const Skill = () => {
       title: "About Me",
       para: " Hello everyone. First of all, thank you for taking your time to find me out. My name is Suman Malla.  I did my full stack training program from Turku University. I've also been coding from CodeAcademy. I'm looking for any opportunities to work in IT field  ",
       para1:
-        " I'm extremely hardworking, passionate and motivated and I want to grow in this industry. Please contact me in case you want to hear more from me. I am looking forward for your help  and I want to contribute towards the growth of your company.",
+        " I'm extremely hardworking, passionate and motivated and I want to grow in this industry.I like to solve problems by sharing and communicating knowledge and information between each others. I am an optimistic person and I want to grow by learning things. I like to take risks in life and I am not scared to fail because that's how you learn and grow.",
     },
   ];
   return (
@@ -37,7 +37,7 @@ const Skill = () => {
           <div className="content flex">
             <div className="left topMarign">
               <Progress done="80" title="HTML" />
-              <Progress done="75" title="CSS" />
+              <Progress done="70" title="CSS" />
               <Progress done="65" title="JAVASCRIPT" />
               <Progress done="65" title="REACT JS" />
               <Progress done="60" title="NODE EXPRESS" />
