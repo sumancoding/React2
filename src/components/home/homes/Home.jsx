@@ -11,6 +11,7 @@ const Home = () => {
       <section className="home">
         <div className="container flex">
           <div className="left">
+    <div className="i-bg"> </div>
             <div className="img">
               <img src={Image} alt="image1" />
             </div>
