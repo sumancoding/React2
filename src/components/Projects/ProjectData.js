@@ -2,7 +2,7 @@ const ProjectData = [
   {
     id: 1,
     title: "E-dashboard",
-    desc: "I created e-commerce dashboard with React in the front and Node/Express in the back. Working with multiple APLis was fun.",
+    desc: "I created e-commerce dashboard via React in the front and Node/Express in the back. Working with multiple API was fun and challenging at the same time.",
     cover: "./assets/projects/e-dashboard.PNG",
   },
   {
@@ -27,7 +27,7 @@ const ProjectData = [
   {
     id: 6,
     title: "Personal Portfolio",
-    desc: "A Personal portfolio using React. I created creating few portfolio and this was one of my work which is also available on my Github.",
+    desc: "A Personal portfolio using React. I created creating few portfolios and this was one of my work which is also available on my Github profile.",
     cover: "./assets/projects/portfolio.PNG",
   },
   {
